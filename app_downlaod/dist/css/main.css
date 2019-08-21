@@ -1,0 +1,132 @@
+body,html{
+	font-family: "Microsoft YaHei",Arial,sans-serif;
+	padding: 0;
+	margin: 0
+}
+
+
+img{
+	width: 100%;
+	display: block;
+}
+
+.container, .container .top{
+	position: relative;
+}
+
+.upperSec{
+	overflow: hidden;
+}
+
+
+.container .content{
+    padding: 10px;
+    overflow: hidden;
+}
+
+.container .section{
+	width: 50%;
+	color: #444;
+	font-size: 14px;
+	text-align: center;
+	margin: 15px 0 15px -1px;
+	float: left;
+}
+
+.section .icon{
+	width: 75px;
+	margin: 0 auto;
+}
+
+
+.borderSec{
+	overflow: hidden;
+}
+
+.borderLeft{
+	float: left;
+	width: 38%;
+	height: 1px;
+	margin: 0 16px;
+	background-color: #e1e1e1;
+}
+
+.borderRight{
+	float: right;
+	width: 38%;
+	height: 1px;
+	margin: 0 16px;
+	background-color: #e1e1e1;
+}
+
+
+
+.section:nth-child(odd){
+	border-right: 1px solid #e1e1e1;
+}
+
+
+.footer{
+	background-color: #f2f2f2;
+	padding: 10px 0;
+	font-size: 12px;
+	height: 50px;
+	color: #333;
+
+}
+
+.footer p{
+	text-align: center;
+	margin: 5px 0;
+}
+
+
+p,div{
+	display: block;
+
+}
+
+
+
+.download_btn{
+	position: absolute;
+	right: 30px;
+	width: 138px;
+	bottom: 50px;
+	left: 50%;
+	height:36px;
+	background: orange;
+	text-align:center;
+	line-height: 36px;
+	color: #fff; 
+	text-decoration: none;
+	border-radius: 8px;
+}
+
+.wechat_mask{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,.8);
+	z-index: 2;
+	overflow: hidden;
+}
+
+.wechat_mask .iosmask,.wechat_mask .androidmask{
+	width: 80%;
+	float: right;
+	margin: 10px;
+}
+
+
+
+.hidden{
+	display:none;
+}
+
+
+
+
+

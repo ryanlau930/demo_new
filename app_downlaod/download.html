@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="HandheldFriendly" content="True">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta http-equiv="cleartype" content="on">
+	<meta name="keywords" content="">
+	<meta name="description" content="广发期货有限公司">
+	<meta name="author" content="广发期货有限公司">
+	<meta content="telephone=no" name="format-detection">
+	<title>广发期货APP下载</title>
+	<link rel="stylesheet" type="text/css" href="dist/css/main.css">
+	<script type="text/javascript">
+
+	</script>
+</head>
+<body>
+<div class="wechat_mask hidden" id="wechat_mask">
+	<img src="dist/img/ios-mask.png" class="iosmask hidden" id="iosmask">
+	<img src="dist/img/android-mask.png" class="androidmask hidden" id="androidmask">
+</div>
+<div class="container">
+	<div class="top">
+		<img src="dist/img/5.1-mobile-top.jpg">
+		<a href="https://apps.apple.com/cn/app/%E5%B9%BF%E5%8F%91%E6%9C%9F%E8%B4%A7/id1223284721" id="dl" class="download_btn">点击下载</a>
+	</div>
+	<div class="content">
+		<div class="upperSec">
+			<div class="sec1 section">
+				<img src="dist/img/5.1-icon1.png" class="icon">
+				<p>期货交易</p>
+			</div>
+			<div class="sec2 section">
+				<img src="dist/img/5.1-icon2.png" class="icon">
+				<p>期货行情</p>
+			</div>
+		</div>
+		<div class="borderSec">
+			<div class="borderLeft"></div>
+			<div class="borderRight"></div>
+		</div>
+		<div class="lowerSec">
+			<div class="sec3 section">
+				<img src="dist/img/5.1-icon3.png" class="icon">
+				<p>研究资讯</p>
+			</div>
+			<div class="sec4 section">
+				<img src="dist/img/5.1-icon4.png" class="icon">
+				<p>交互服务</p>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<p class="copyright">版权所有：广发期货有限公司</p>
+		<p class="inquires">如再操作中有任何问题，请致电：95105826</p>
+	</div>
+</div>
+
+
+<script type="text/javascript">
+//判断是否微信登陆
+    function WeiXin() {
+        var ua = navigator.userAgent.toLowerCase();
+            
+        if (ua.match(/MicroMessenger/i) == 'micromessenger') {
+            return true;
+        } else {
+            return false;
+        }
+    }
+   // 直接调用即可u = navigator.userAgent;
+	
+            
+    if (WeiXin()) {
+        alert(" 是来自微信内置浏览器")
+        document.getElementById('wechat_mask').style.display='block'
+        var u = navigator.userAgent;
+			var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+			var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+   
+        if (isAndroid) {
+
+		    	document.getElementById('androidmask').style.display='block';
+
+		    } else if (isiOS) {
+		    	document.getElementById('iosmask').style.display='block';
+		    }
+    } else {
+        alert("不是来自微信内置浏览器")
+       if (isAndroid) {
+				var change = document.getElementById('dl');
+				change.setAttribute('href','http://www.gfqh.cn/download/pbmobile-guangfaqihuo.apk')
+            }
+    }
+
+	
+			
+			
+	</script>
+</body>
+</html>

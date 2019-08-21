@@ -71,14 +71,14 @@
         }
     }
    // 直接调用即可u = navigator.userAgent;
-	
+	var u = navigator.userAgent;
+			var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+			var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
             
     if (WeiXin()) {
         alert(" 是来自微信内置浏览器")
         document.getElementById('wechat_mask').style.display='block'
-        var u = navigator.userAgent;
-			var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
-			var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+            
    
         if (isAndroid) {
 
